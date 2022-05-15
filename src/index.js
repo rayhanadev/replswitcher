@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+
 const Conf = require('conf');
 const config = new Conf();
 const chalk = require('chalk');
