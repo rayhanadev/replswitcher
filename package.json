@@ -1,31 +1,48 @@
 {
-  "name": "replswitcher",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "node src/index.js",
-		"build": "pkg --compress GZip ."
-  },
-	"bin": {
-		"replswitcher": "./src/index.js"
-	},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "conf": "^10.1.2",
-    "crosis4furrets": "^0.0.1-beta.7",
-    "gitignore-parser": "^0.0.2",
-    "inquirer": "^8.2.4",
-    "lightfetch-node": "^1.1.1",
-    "ora": "^5.4.1",
-    "replit-login": "^1.0.4"
-  },
-	"pkg": {
-		"scripts": "src/**/*.js",
-		"targets": [ "node16-linux-x64", "node16-macos-x64", "node16-win-x64" ],
-		"outputPath": "dist"
-	}
+ "name": "replswitcher",
+ "version": "1.0.1",
+ "description": "Move a Replit project from one Repl to another from your terminal!",
+ "homepage": "https://github.com/rayhanadev/replswitcher",
+ "main": "src/index.js",
+ "scripts": {
+  "test": "node src/index.js",
+  "build": "pkg --compress GZip ."
+ },
+ "bin": {
+  "replswitcher": "./src/index.js"
+ },
+ "files": [
+  "src"
+ ],
+ "keywords": [
+  "replit",
+  "repl",
+  "cli",
+  "cli-tool"
+ ],
+ "author": "Ray Arayilakath <rayhanadev@protonmail.com> (https://rayhanadev.vercel.app)",
+ "license": "MIT",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/rayhanadev/replswitcher.git"
+ },
+ "dependencies": {
+  "chalk": "^4.1.2",
+  "conf": "^10.1.2",
+  "crosis4furrets": "^0.0.1-beta.7",
+  "gitignore-parser": "^0.0.2",
+  "inquirer": "^8.2.4",
+  "lightfetch-node": "^1.1.1",
+  "ora": "^5.4.1",
+  "replit-login": "^1.0.4"
+ },
+ "pkg": {
+  "scripts": "src/**/*.js",
+  "targets": [
+   "node16-linux-x64",
+   "node16-macos-x64",
+   "node16-win-x64"
+  ],
+  "outputPath": "dist"
+ }
 }
