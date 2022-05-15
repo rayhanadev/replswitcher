@@ -1,0 +1,10 @@
+# nodejs
+/node_modules
+
+# replit
+.replit
+replit.nix
+.breakpoints
+/.cache
+/.config
+/.upm
